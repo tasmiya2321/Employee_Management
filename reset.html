@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bc0ac06df1.js" crossorigin="anonymous"></script>
+
+    <title>Login</title>
+
+    <style>
+            body {
+            background-color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row; /* Change to row to align divs horizontally */
+            height: 100vh;
+        }
+        .left-div {
+            background-color: #f5f0ec; /* Off-white background color for left div */
+            width: 40%; /* Adjust the width as desired */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .right-div {
+            background-color: white;
+            width: 70%; /* Adjust the width as desired */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+     
+        
+
+        .logo {
+            width: 350px;
+            height: 180px;
+            background-image: url('./cf_logo.png');
+            background-size: cover;
+            border-radius: 100%;
+            margin-bottom: 10px;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+            text-align: left;
+            margin-top: 10px;
+        }
+        input[type="submit"] {
+            width: 110%;
+            padding: 10px;
+            background-color: #ffbb33;
+            color: #fff;
+            border: 2px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+        }
+
+        .div_img img {
+            width: 100%; /* Adjust the image size as needed */
+        }
+
+        .heading {
+            font-size: 24px;
+            margin-top: 5px;
+            text-align: right; 
+        }
+ 
+
+    </style>
+</head>
+<body>
+    
+</body>
+ <div class="left-div">
+        <div class="div_img">
+            <img src="./div_reset.png" >
+        </div>
+    </div>
+
+    <div class="right-div">
+        <div class="logo"></div>
+    <div class="heading"><h2>Forgot Password?</h2> </div>
+        <div style="margin-top: 2px;"></div>
+        <form>
+            <input type="email" name="email" placeholder="&#9993; Enter your email" requiredd><br><br>
+            
+            <input type="submit" value="Send">
+        </form>
+    </div>
+</body>
+</html>
