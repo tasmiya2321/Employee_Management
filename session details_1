@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="search.css">
+</head>
+<body>
+    <center>
+    <h1>Session</h1>
+
+ <form action="/search" method="get">
+        <input type="text" name="q" placeholder=" Search ( Program, Activity)">
+        <input type="submit" value="Search" size="30"> <br>
+    </center>
+       
+       <div class="CenterType">
+        <tr>
+            <td>Center Type</td>
+            <td>
+                <select name="center-type">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+            </td>
+        </tr>
+    </div>
+    </form>
+
+    <div class="button">
+
+   
+<button>Create</button>
+<button>Edit</button>
+</div>
+
+
+<div class="table">
+
+<table  bgcolor="">
+    <tr bgcolor="orange">
+
+            <th>Date</th>
+            <th>Program</th>
+            <th>Project</th>
+            <th>Activity</th>
+            <th>Center Type</th>
+            <th>Role</th>
+
+
+            <th>Beneficiaries</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Category</th>
+
+
+        </tr>
+        <tr bgcolor="white">
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+             <td>1</td>
+             <td>1</td>
+             <td>1</td>
+             <td>1</td>
+
+            
+        </tr>
+    </table>
+</div>
+    
+</body>
+</html>
