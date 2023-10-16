@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    width: 1263px; 
+    height: 600px;
+   background-color: rgb(247,241,233);
+}
+h1{
+    margin-top: 14px;
+}
+.clock {
+    font-size: 2em;
+}
+
+input[type="time"] {
+    font-size: 1em;
+}
+.container{
+    width: 500px;
+    height: 663px;
+    margin-top: 0px;
+    margin-left: 300px;
+    padding-top: 41px;
+    
+    padding-left: 142px;
+}
+
+input{
+margin:15px ;
+}
+
+button{
+   margin-left: 100px;
+}
+
+ td{
+    font-size: 20px;
+ }
+
+ input,type[text]{
+    margin-left: 60px;
+    height: 25px;
+ }
+ select,name[center-type]{
+    margin-left: 60px;
+    height: 25px;
+   
+ }
