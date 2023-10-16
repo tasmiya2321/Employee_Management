@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="details.css">
+</head>
+<body>
+    <center><h1>Session</h1></center>
+    <div class="container">
+    <form >
+        <table>
+            <tr>
+                <td>Employee ID   </td>
+                <td><input type="text" size="30"></td>
+            </tr>
+
+            <tr>
+                <td>Date </td>
+                <td><input type="date" id="date" name="date"></td>
+            </tr>
+
+            <tr>
+                <td>Program</td>
+                <td>
+                    <select name="program"  >
+                        <option value="program1">Program 1</option>
+                        <option value="program2">Program 2</option>
+                        <option value="program3">Program 3kvhjkdrhgklseughuise</option>
+                        
+                    </select>
+                </td>
+            </tr>
+            
+
+            <tr>
+                <td>Project   </td>
+                <td><input type="text"  size="30"></td>
+            </tr>
+
+            <tr>
+                <td>Activity   </td>
+                <td><input type="text"  size="30"></td>
+            </tr>
+
+            <tr>
+                <td>Center Type</td>
+                <td>
+                    <select name="center-type">
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select>
+                </td>
+            </tr>
+            
+
+                <td>Role  </td>
+                <td><input type="text" size="20"></td>
+            </tr>
+            
+            <tr>
+                <td>Beneficiaries </td>
+                <td><input type="text" size="30"></td>
+            </tr>
+
+            <tr>
+                <td>Category </td>
+                <td><input type="text"  size="30"></td>
+            </tr>
+
+            <tr>
+                <td>Start Time </td>
+                <td>
+                    <input type="time" id="start-time" name="start-time" step="60"></td>
+            </tr>
+
+            <tr>
+                <td>End Time </td>
+                <td><input type="time" id="end-time" name="end-time" step="60"></td>
+            </tr>
+            
+           
+            <tr>
+                <td colspan="2">
+                    <div class="clock" id="clock"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>Comment</td> 
+                <td><textarea id="comment" ></textarea></td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <button >Update</button>
+                </td>
+            </tr>
+       
+
+        </table>
+    </form>
+    </div>
+</div>
+
+
+
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            let hours = now.getHours();
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+
+            const amPm = hours >= 12 ? 'PM' : 'AM';
+            hours = hours % 12 || 12;
+
+            const clockElement = document.getElementById('clock');
+            clockElement.textContent = `${hours}:${minutes}:${seconds} ${amPm}`;
+
+            setTimeout(updateClock, 1000);
+        }
+
+        updateClock();
+    </script>
+  
+</body>
+</html>
