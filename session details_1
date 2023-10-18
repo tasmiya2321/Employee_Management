@@ -8,7 +8,11 @@
 </head>
 <body>
     <center>
-    <h1>Session</h1>
+    <h1>Session Details</h1>
+    <div class="button">
+        <button onclick="redirectToCreatePage()">Create</button>
+        <button>Edit</button>
+    </div>
 
  <form action="/search" method="get">
         <input type="text" name="q" placeholder=" Search ( Program, Activity)">
@@ -29,12 +33,12 @@
     </div>
     </form>
 
-    <div class="button">
+    <!-- <div class="button">
 
    
 <button>Create</button>
 <button>Edit</button>
-</div>
+</div> -->
 
 
 <div class="table">
@@ -47,13 +51,13 @@
             <th>Project</th>
             <th>Activity</th>
             <th>Center Type</th>
-            <th>Role</th>
+            <!-- <th>Role</th> -->
 
 
             <th>Beneficiaries</th>
-            <th>Start Time</th>
+            <!-- <th>Start Time</th>
             <th>End Time</th>
-            <th>Category</th>
+            <th>Category</th> -->
 
 
         </tr>
@@ -63,16 +67,21 @@
             <td>1</td>
             <td>1</td>
             <td>1</td>
-            <td>1</td>
+            <!-- <td>1</td> -->
              <td>1</td>
+             <!-- <td>1</td>
              <td>1</td>
-             <td>1</td>
-             <td>1</td>
+             <td>1</td> -->
 
             
         </tr>
     </table>
 </div>
+<script>
+function redirectToCreatePage() {
+    window.location.href = "details.html"; // Replace with the actual URL of the create page
+}
+</script>
     
 </body>
 </html>
