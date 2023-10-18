@@ -4,151 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="employee.css">
-    <style>
-      
-    </style>
+    <link rel="stylesheet" href="search.css">
 </head>
 <body>
-    <form action="">
-        <center>
-            <h1>Details</h1>
-        </center>
-        <hr>
-        <center>
-            <h3>Personal Details</h3>
-        </center>
+    <center>
+    <h1>Session Details</h1>
+    <div class="button">
+        <button onclick="redirectToCreatePage()">Create</button>
+        <button>Edit</button>
+    </div>
 
-        <table style="margin-left: 435px;">
-
-            <tr>
-                <td>Full name</td>
-                <td><input type="text" size="30"></td>
-            </tr>
-            <tr>
-                <td>Address</td>
-                <td><textarea rows="4" cols="50"></textarea></td>
-            </tr>
-            <!-- <tr class="twobox">
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-            </tr> -->
-            <tr>
-                <td>Date</td>
-                <td><input type="date" id="date" name="date"></td>
-            </tr>
-
-            <td>Phone</td>
-            <td><input type="number" size="30"></td>
-            </tr>
-            <tr>
-                <td>Email ID</td>
-                <td><input type="email" placeholder="*****.com" size="30"></td>
-            </tr>
-            <tr>
-                <td>Gender:</td>
-                <td>
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Male</label>
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Female</label>
-                    <input type="radio" id="other" name="gender" value="other">
-                    <label for="other">Other</label>
-                </td>
-            </tr>
-        </table>
-
-        <hr>
-
-        <center>
-            <h3>Employee Details</h3>
-        </center>
-        <table>
-            <tr>
-                <td>Employee ID</td>
-                <td><input type="text" size="30"></td>
-            </tr>
-            <tr>
-                <td>Centre</td>
-                <td><input type="text" size="30"></td>
-            </tr>
-            <tr>
-                <td>Designation</td>
-                <td><input type="text" size="30"></td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="year">Year of Joining</label>
-                </td>
-                <td>
-                    <select id="year" name="year">
-                        <option value="2023">2023</option>
-                        <option value="2022">2022</option>
-                        <option value="2021">2021</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="Status">Status</label>
-                </td>
-                <td>
-                    <select>
-                        <option value="Active">Active</option>
-                        <option value="resigned">resigned</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="year">Resource</label>
-                </td>
-                <td>
-                    <select>
-                        <option value="Employee">Employee</option>
-                        <option value="part-time">part-time</option>
-                        <option value="consultants">consultants</option>
-                    </select>
-                </td>
-            </tr>
-        </table>
-
-        <hr>
-
-        <center>
-            <h3>Account Details</h3>
-        </center>
-        <table>
-            <tr>
-                <td>Bank Name</td>
-                <td><input type="text" size="30"></td>
-            </tr>
-            <tr>
-                <td>Centre</td>
-                <td><input type="text" size="30"></td>
-            </tr>
-            <tr>
-                <td>IFSC</td>
-                <td><input type="text" size="30"></td>
-            </tr>
-            <tr>
-                <td>Branch</td>
-                <td><input type="text" size="30"></td>
-            </tr>
-        </table>
+ <form action="/search" method="get">
+        <input type="text" name="q" placeholder=" Search ( Program, Activity)">
+        <input type="submit" value="Search" size="30"> <br>
+    </center>
+       
+       <div class="CenterType">
+        <tr>
+            <td>Center Type</td>
+            <td>
+                <select name="center-type">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+            </td>
+        </tr>
+    </div>
     </form>
 
-    <!-- Update button -->
-    <button type="button" onclick="updateForm()">Update</button>
+    <!-- <div class="button">
 
-    <!-- Submit button -->
-    <button type="submit">Submit</button>
+   
+<button>Create</button>
+<button>Edit</button>
+</div> -->
 
-    <script>
-        function updateForm() {
-            // Add your update logic here
-            alert('Form updated!');
-        }
-    </script>
+
+<div class="table">
+
+<table  bgcolor="">
+    <tr bgcolor="orange">
+
+            <th>Date</th>
+            <th>Program</th>
+            <th>Project</th>
+            <th>Activity</th>
+            <th>Center Type</th>
+            <!-- <th>Role</th> -->
+
+
+            <th>Beneficiaries</th>
+            <!-- <th>Start Time</th>
+            <th>End Time</th>
+            <th>Category</th> -->
+
+
+        </tr>
+        <tr bgcolor="white">
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <!-- <td>1</td> -->
+             <td>1</td>
+             <!-- <td>1</td>
+             <td>1</td>
+             <td>1</td> -->
+
+            
+        </tr>
+    </table>
+</div>
+<script>
+function redirectToCreatePage() {
+    window.location.href = "details.html"; // Replace with the actual URL of the create page
+}
+</script>
+    
 </body>
 </html>
